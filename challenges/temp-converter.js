@@ -3,7 +3,7 @@ console.log('tempConverter script has loaded');
 // write this function!
 function tempConverter(degrees, temperature){
   if (temperature === 'celcius'){
-    result = ((degrees-32)/9*5).toFixed(2);
+    result = parseFloat(((degrees-32)/9*5).toFixed(2));
   }else if (temperature === 'farenheit'){
     result = ((degrees*9/5)+32);
   }else if (temperature!=='celcius' && temperature!=='farenheit'){
